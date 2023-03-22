@@ -1,8 +1,6 @@
-Website for InDhanPay by JDM
+Thanks for downloading this template!
 
-Name: InDhanPay
-Origin Main URL: https://www.indhanpay.com/
-Author: Utkarsh Jyotishi From JDM
-Company Name: InDhan PayGate Private Limited 
-Email:support@indhanpay.com
-Designed by JDM
+Template Name: Vesperr
+Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+Author: BootstrapMade.com
+License: https://bootstrapmade.com/license/
