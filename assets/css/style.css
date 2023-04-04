@@ -6,6 +6,11 @@
 */
 
 /*--------------------------------------------------------------
+# imports
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
@@ -96,6 +101,7 @@ h6 {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
+  font-family: Eras ITC
 }
 
 #header .logo h1 a,
@@ -391,6 +397,10 @@ h6 {
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+#hero .h2 {
+  margin: -20px !important;
 }
 
 @media (min-width: 1024px) {
@@ -1583,7 +1593,7 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 15px 0;
+  padding: 45px 0 15px;
   background: #f8f8f8;
   min-height: 40px;
   margin-top: 86px;
@@ -1670,74 +1680,80 @@ section {
 #footer .footer-links a:hover {
   color: #FFB200;
 }
+
 /*--------------------------------------------------------------
 # highlight
 --------------------------------------------------------------*/
 
-  
-            .row {
-              display: -ms-flexbox; /* IE10 */
-              display: flex;
-              -ms-flex-wrap: wrap; /* IE10 */
-              flex-wrap: wrap;
-              padding: 0 3px;
-            }
-            
-            /* Create four equal columns that sits next to each other */
-            .column {
-              -ms-flex: 33.33%; /* IE10 */
-              flex: 33.33%;
-              max-width: 33.33%;
-              padding: 0 3px;
-            }
-            
-            .column img {
-              margin-top: 8px;
-              vertical-align: middle;
-              width: 100%;
-            }
-            
-            /* Responsive layout - makes a two column-layout instead of four columns */
-            @media screen and (max-width: 800px) {
-              .column {
-                -ms-flex: 33.33%;
-                flex: 33.33%;
-                max-width: 33.33%;
-              }
-            }
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 3px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33.33%;
+  /* IE10 */
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 3px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 33.33%;
+    flex: 33.33%;
+    max-width: 33.33%;
+  }
+}
 
 /*--------------------------------------------------------------
 # Button section
 --------------------------------------------------------------*/
 button.mbtn {
   border-radius: 8px;
-  color:#000000;
-  background-color:#FFB200;
+  color: #000000;
+  background-color: #FFB200;
   text-align: center;
-  margin:1em;
+  margin: 1em;
   width: 48x;
   height: 24px;
-  border:0;
-  cursor:pointer;
+  border: 0;
+  cursor: pointer;
 }
 
-button.mbtn.black
-{
-    background-color:#000000;
+button.mbtn.black {
+  background-color: #000000;
 }
 
-button.mbtn.red
-{
-    background-color:#c62828;
+button.mbtn.red {
+  background-color: #c62828;
 }
 
 /*--------------------------------------------------------------
 # Login massage section
 --------------------------------------------------------------*/
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text],
+input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -1751,7 +1767,7 @@ button {
   background-color: #FFB200;
   color: white;
   padding: 14px 20px;
-  margin: 8px ;
+  margin: 8px;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -1763,9 +1779,9 @@ button {
   padding: 10px 20px;
   margin: 0px 0px 0px 0px;
   border-radius: 50px;
-  border:#000000;
+  border: #000000;
   cursor: pointer;
-  
+
 }
 
 button:hover {
@@ -1803,25 +1819,35 @@ span.psw {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
   padding-top: 60px;
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
+  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
@@ -1847,22 +1873,81 @@ span.psw {
 }
 
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
 }
-  
+
 @keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
-     display: block;
-     float: none;
+    display: block;
+    float: none;
   }
+
   .cancelbtn {
-     width: 100%;
+    width: 100%;
   }
+}
+
+/*--------------------------------------------------------------
+# Edits by Punit
+--------------------------------------------------------------*/
+
+/* app page api */
+.blue {
+  font-style: unset;
+  color: blue;
+}
+
+.red {
+  font-style: unset;
+  color: red;
+}
+
+.purple {
+  font-style: unset;
+  color: purple;
+}
+
+.api-code-text {
+  line-height: 0%;
+  font-size: 70%;
+  font-family: 'Space Mono', monospace !important;
+}
+
+.api-block15 {
+  padding-left: 15px;
+}
+
+.api-block45 {
+  padding-left: 45px;
+}
+
+.api-block25 {
+  padding-left: 25px;
+}
+
+/* all InDhanPay titles */
+
+.photo-gallery-box {
+  width: 1180px;
+  height: 650px;
+  /* border: 5px solid blue; */
+  /* background-image: ; */
+  /* position: relative; */
 }
