@@ -1603,7 +1603,7 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 45px 0 15px;
+  padding: 10px 0 10px;
   background: #f8f8f8;
   min-height: 40px;
   margin-top: 86px;
