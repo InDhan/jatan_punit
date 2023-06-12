@@ -1940,22 +1940,9 @@ body { -webkit-text-size-adjust: none; }
   line-height:0px;
   font-size: 70%;
   font-family: 'Space Mono', monospace !important;
-  /* white-space: nowrap; */
 }
 
-.api-block15 {
-  padding-left: 15px;
-}
-
-.api-block45 {
-  padding-left: 45px;
-}
-
-.api-block25 {
-  padding-left: 25px;
-}
-
-/* all InDhanPay titles */
+/* SOS Service */
 
 #sos-img{
   height: 500px;
@@ -1964,7 +1951,6 @@ body { -webkit-text-size-adjust: none; }
 #sos-box{
 margin-top: 30px;
 display: flex;
-/* gap: 1000px; */
 }
 
 #sos-image-box{
@@ -1984,23 +1970,16 @@ display: flex;
   flex-grow: 2;
 }
 
-
-/* home page organisation alignment--centre
-about, feature, contact go-to links
-banner padding and fonts
-removed join us
-target blank index html */
-
 /* market */
 
-.market-container , .non-qr-container{
+.market-container{
   display: flex;
   justify-content: center;
   margin-top: -20px;
   margin-bottom: 20px;
 }
 
-.market-content , .non-qr-content{
+.market-content{
   padding: 20px;
   max-width: 700px;
 }
@@ -2030,10 +2009,10 @@ input[type="radio"]:checked +label {
   border-radius: 8px;
 }
 
-/* input[type="radio"]:checked+a.btn-buy{
-  background: #ff005d;
+input[type="radio"]:checked + .btn-buy{
+  background: #FFB200;
   color: #fff;
-} */
+}
 
 .pricing label{
   display: block;
